@@ -4,8 +4,7 @@
 
 html, body {
 	height: 100%;
-	min-width: 480px; /*764px;*/
-	/*background-color: #FFFFFF;*/
+	min-width: 480px;
 }
 
 body {
@@ -14,9 +13,6 @@ body {
 
 .wrapper {
 	width: 100%;
-	/*min-width: 100%;*/
-	/*max-width: 100%;*/
-	/*min-height: 100%;*/
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto 0;
@@ -41,16 +37,16 @@ body {
 	background-color: #283841;
 	color: #FFFFFF;
 	z-index: 1000;
-  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 .logo {
-	background-image: url(images/speedReadLogo2.png);
+	background-image: url(../images/speedReadLogo2.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	margin: 0px 0 0 9px;
+	margin: 0 0 0 9px;
 	float: left;
 	width: 40%;
 	max-width: 400px;
@@ -117,41 +113,35 @@ body {
 }
 
 .word-counter {
-	/*position: relative;*/
 	width: 97%;
-	/*border: solid red;*/
 	background-color: #FFFFFF;
 }
 
 .timer {
-	/*position: absolute;*/
 	width: 45%;
-	/*border: solid red;*/
 	background-color: #FFFFFF;
 }
 .word-timer {
 	width: 13%;
-	/*border: solid red;*/
 	margin-left: 2%;
 	background-color: #FFFFFF;
 }
 
 .escape-button {
 	display: none;
-	background-image: url(images/exitFull.png);
+	background-image: url(../images/exitFull.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	position: absolute;
 	margin: -5% 0 1% 85%;
 	padding: 2.8% 2.9% 2.2% 2.4%;
 	width: 2.5%;
-	/*height: 2%;*/
 	border-radius: 10px;
 	background-color: white;
 	border: solid 1px black;
-	 -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+	 -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
 }
 
 .escape-button:hover {
@@ -160,7 +150,7 @@ body {
 
 .enter-fullscreen {
 	display: none;
-	background-image: url(images/enterFull.png);
+	background-image: url(../images/enterFull.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -170,9 +160,9 @@ body {
 	border-radius: 10px;
 	background-color: white;
 	border: solid 1px black;
-	 -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+	 -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -182,21 +172,18 @@ body {
 .text-input-box {
 	position: relative;
 	left: 7%;
-	width: 83%; /*475px;*/
-	/*margin-top: ; 25% 0 28%;*/
+	width: 83%;
 	background-color: #888;
-	/*background-position: 30%;*/
 	border: solid #333;
 	border-radius: 20px;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   color: #FFFFFF;
-  /*font-weight: 700;*/
 }
 
 #text-input {
-	width: 81.5%; /*400px;*/
+	width: 81.5%;
   height: 150px;
-  padding: 2.5%; /*8px;*/
+  padding: 2.5%;
   margin: 6%;
   border: 1px solid #cccccc;
   line-height: 130%;
@@ -205,10 +192,7 @@ body {
 
 #display-wrapper {
 	position: relative;
-	width: 470px; /*70%;*/ /*96% 600px*/
-	/*margin-top: 15%;*/
-	/*margin-bottom: 15%;*/
-	/*padding: 2.5% 1.4% 2.1% 2%;*/
+	width: 470px;
 	min-width: 250px;
 	margin: 10% 25% 10% 17.5%;
 	background-color: #FFFFFF;
@@ -217,13 +201,11 @@ body {
 .box-top {
 	padding-bottom: 2%;
 	background-color: #FFFFFF;
-	/*border: solid red;*/
 }
 
 .box-bottom {
 	padding-top: 2%;
 	background-color: #FFFFFF;
-	/*border: solid red;*/
 }
 
 .pointer-top {
@@ -233,7 +215,6 @@ body {
 	background-size: 6%;
 	background-repeat: no-repeat;
 	display: block;
-	/*border: solid red;*/
 	padding-bottom: 3%;
 	background-color: transparent;
 	margin: 0 0 0 -5%;
@@ -246,7 +227,6 @@ body {
 	background-size: 6%;
 	background-repeat: no-repeat;
 	display: block;
-	/*border: solid red;*/
 	padding-bottom: 3%;
 	background-color: transparent;
 	margin: 1% 0 0 -5%;
@@ -260,17 +240,12 @@ body {
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
-	width: 123%; /*99%; 575px;*/
-	/*height: 50%; /*90px;*/*/
-	/*padding-bottom: 14%;*/
-	/*margin-left: 4%;*/
+	width: 123%;
 	min-width: 150px;
-	/*min-height: 30px;*/
 	text-align: center;
 	font-size:2em;
 	font-weight: 800;
-	padding-left: 0; /*5% 0 5% 0;*/
-	/*border: solid #aaa;*/
+	padding-left: 0;
 	background-color: #FFFFFF;
 	left: 5%;
 	position: relative;
@@ -282,11 +257,8 @@ body {
 	width: 100%;
 }
 .readWords {
-	/*font-family: "Andale Mono", AndaleMono, monospace;*/
 	font-family: Monaco, Consolas, "Lucida Console", monospace;
-	/*font-family: "Courier New", Courier, monospace;*/
 	position: relative;
-	/*left: 24%;*/
 }
 
 .centerLetter {
@@ -309,13 +281,13 @@ body {
 
 .settings:hover {
 	border-color: transparent;
-  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 .settings-tab {
-	width: 90%; /*330px;*/
+	width: 90%;
 	max-width: 250px;
 	min-width: 170px;
 	margin: -3px 17% 0 0;
@@ -325,9 +297,9 @@ body {
 	display: none;
 	border-radius: 5px;
 	border-color: transparent;
-  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
 }
 
 .controls {
@@ -397,7 +369,7 @@ body {
 	border: 2px solid #999999; border-radius: 20px;
 	position: relative;
 	top: 0; bottom: 0;
-	right: 0px;
+	right: 0;
 	-moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
 	-o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
 }
@@ -416,26 +388,11 @@ body {
 	color: #FFFFFF;
 	padding: 2% 0 0 1em;
 	font-size: 0.5em;
-	-webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 .copyright {
 	position: relative;
-	/*float: right;*/
 }
-
-/**:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
-    background-color: #FFFFFF;
-}
-*/
-/*@media only screen and (max-device-width: 480px) {*/
-/*	.content {
-		width: 40%;
-	}*/
-/*	#display-wrapper {
-		margin-top: auto;
-		margin-left: auto;
-	}*/
-/*}*/
