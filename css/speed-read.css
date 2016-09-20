@@ -208,7 +208,7 @@ body {
 	background-color: #FFFFFF;
 }
 
-.pointer-top {
+/*.pointer-top {
 	background-image: url(images/pointer-top.png);
 	width: 110%;
 	background-position: 31.5%;
@@ -231,7 +231,7 @@ body {
 	background-color: transparent;
 	margin: 1% 0 0 -5%;
 	position: relative;
-}
+}*/
 
 #text-display {
 	display: -webkit-box;

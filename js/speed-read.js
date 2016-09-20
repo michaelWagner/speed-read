@@ -11,7 +11,7 @@ var w = window,
   g = d.getElementsByTagName('body')[0],
   viewWidth = w.innerWidth || e.clientWidth || g.clientWidth,
   y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-console.log(viewWidth);
+// console.log(viewWidth);
 
 window.onload = function () {
 
@@ -20,7 +20,7 @@ window.onload = function () {
 
   var displayPos = document.getElementById('display-wrapper').offsetLeft;
   pointerPos = document.getElementsByClassName('pointer-top')[0].offsetLeft + displayPos;
-  console.log('pointerPos: ', pointerPos);
+  // console.log('pointerPos: ', pointerPos);
 
   // Listen for new files.
   document.getElementById('file-input').addEventListener(
@@ -39,7 +39,7 @@ window.onresize = function(event) {
   g = d.getElementsByTagName('body')[0];
   viewWidth = w.innerWidth || e.clientWidth || g.clientWidth;
   y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-  console.log(viewWidth);
+  // console.log(viewWidth);
   var displayPos = document.getElementById('display-wrapper').offsetLeft;
    pointerPos = document.getElementsByClassName('pointer-top')[0].offsetLeft + displayPos;
   // console.log('pointerPos: ', pointerPos);
@@ -102,7 +102,7 @@ function checkKeyPressed(e) {
     } else if (e.keyCode === 13) {
       document.getElementById("stop-read").click();
     } else if (e.keyCode === 27) {
-      console.log('exit');
+      // console.log('exit');
       exitFullScreen();
       exitFullScreen();
     }
@@ -281,9 +281,11 @@ function exitFullScreen() {
 function togglePlayPause() {
   if (!wordsArePlaying) {
     document.getElementsByClassName('play-button')[0].click();
+    startWatch();
   } else {
     document.getElementById('pause-read').click();
     wordsArePlaying = false;
+    stopWatch();
   }
 }
 
@@ -347,7 +349,7 @@ function displayTextAtSpeed() {
 
   // When word is only one letter, index is 0 or reset index.
   if (currentTextIndex === words.length) {
-    console.log('one word/letter: ', currentTextIndex, words);
+    // console.log('one word/letter: ', currentTextIndex, words);
     currentTextIndex = 0;
   }
 
@@ -363,21 +365,21 @@ function displayTextAtSpeed() {
     // console.log(word);
     if (word !== undefined && word !== '') {
       startWatch();
-      console.log(word);
+      // console.log(word);
       textDisplay.innerHTML = word;
       wordCounter.innerHTML = "Words Read: " + currentTextIndex;
     }
   }
 
-  console.log(words);
+  // console.log(words);
 
   // Display rest of text
   displayWordsAtInterval = setInterval(function() {
     whiteSpacePattern = new RegExp('\\s');
     if (words[currentTextIndex] !== undefined) {
       // console.log(whiteSpacePattern.test(words[currentTextIndex + 1]));
-      console.log(words[currentTextIndex] === '');
-      console.log(words[currentTextIndex].length);
+      // console.log(words[currentTextIndex] === '');
+      // console.log(words[currentTextIndex].length);
       if (words[currentTextIndex].length === 1) {
         word = changeCenterLetterColor(words[currentTextIndex++]);
         textDisplay.innerHTML = ' ' + word;
@@ -386,7 +388,7 @@ function displayTextAtSpeed() {
       if (words[currentTextIndex] === '') {
         currentTextIndex++;
         textDisplay.innerHTML = '&nbsp;';
-        console.log('its a space dummy');
+        // console.log('its a space dummy');
       }
       // Get the word and increment currentTextIndex to move to the next word.
       word = changeCenterLetterColor(words[currentTextIndex++]);
